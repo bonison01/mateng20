@@ -16,19 +16,26 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
-    "downlevelIteration": true, // Add this line
+    "downlevelIteration": true,
     "plugins": [
       {
         "name": "next"
       }
-    ]
+    ],
+    "baseUrl": ".", // Set the base URL to the root directory of your project
+    "paths": {
+      "@/*": ["./*"] // This will resolve the "@" alias to your root directory
+    }
   },
   "include": [
     "next-env.d.ts",
     ".next/types/**/*.ts",
     "**/*.ts",
-    "**/*.tsx"
-, "app/crud/page.js", "app/crud/dropdownValues.js", "app/crud/Dropdowns.js"  ],
+    "**/*.tsx",
+    "app/crud/page.js",
+    "app/crud/dropdownValues.js",
+    "app/crud/Dropdowns.js"
+  ],
   "exclude": [
     "node_modules"
   ]

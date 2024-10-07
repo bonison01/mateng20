@@ -64,21 +64,6 @@
   font-size: 1.5rem;
   color: #333;
 }
-.seeMoreButton {
-  margin-top: 10px;
-  padding: 8px 12px;
-  font-size: 1rem;
-  color: white;
-  background-color: #064923;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-.seeMoreButton:hover {
-  background-color: #013710;
-}
 
 
 .highlight {
