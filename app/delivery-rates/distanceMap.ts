@@ -14,10 +14,10 @@ export const distanceMap: Record<string, Record<string, number>> = {
     'Keishampat': 6,
   },
   'Lamphel Supermarket': {
-    'RIMS': 3,
+    'RIMS': 1,
     'Thangmeiband': 2,
-    'Paona Bazar': 6,
-    'Keishampat': 5,
+    'Paona Bazar': 3,
+    'Keishampat': 4,
   },
   'Paona Bazar': {
     'RIMS': 7,
