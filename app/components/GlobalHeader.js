@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { FaUser } from 'react-icons/fa'; 
 import styles from './GlobalHeader.module.css';
 
+
 const GlobalHeader = () => {
   return (
     <header className={styles.header}>

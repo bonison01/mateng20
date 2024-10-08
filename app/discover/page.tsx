@@ -2,6 +2,7 @@
 import { useEffect, useState } from "react";
 import styles from './page.module.css';
 
+
 type Shop = {
   name: string;
   photo: string;
