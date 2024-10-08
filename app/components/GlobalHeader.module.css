@@ -18,7 +18,9 @@
   width: auto;
   position: absolute; /* Allow it to overflow the header */
   top: -45px; /* Adjust this value to control the vertical alignment */
+  left: -40px; /* Adjust this value to move the logo slightly to the left */
 }
+
 
 .nav {
   display: flex;

@@ -1,6 +1,6 @@
 import Link from 'next/link';
-import { FaUser } from 'react-icons/fa'; // Importing a user icon from react-icons
-import styles from './GlobalHeader.module.css'; // Ensure this path matches where you create the CSS module
+import { FaUser } from 'react-icons/fa'; 
+import styles from './GlobalHeader.module.css';
 
 const GlobalHeader = () => {
   return (
