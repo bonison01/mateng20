@@ -1,5 +1,6 @@
 "use client";
 import { useEffect } from "react";
+import Image from 'next/image';
 import styles from './about.module.css';
 
 const companyJourney = [
@@ -39,7 +40,7 @@ export default function AboutUsPage() {
         <h2>Our Story in Pictures</h2>
         <div className={styles.imageGallery}>
           {images.map((src, index) => (
-            <img key={index} src={src} alt={`Company Event ${index + 1}`} className={styles.image} />
+            <Image key={index} src={src} alt={`Company Event ${index + 1}`} className={styles.image} />
           ))}
         </div>
       </div>

@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image'; // Not currently used, but included for future use
 import styles from './login.module.css';
 
 const LoginPage = () => {
@@ -14,7 +15,7 @@ const LoginPage = () => {
 
                 <button type="submit" className={styles.button}>Login</button>
             </form>
-            <p>Don't have an account? <a href="/signup">Sign up</a></p>
+            <p>Don&apos;t have an account? <a href="/signup">Sign up</a></p> {/* Escape the apostrophe here */}
         </div>
     );
 };

@@ -1,5 +1,6 @@
 "use client";
 import { useEffect, useState } from "react";
+import Image from 'next/image';
 import styles from './page.module.css';
 
 
@@ -118,7 +119,7 @@ export default function DiscoverPage() {
             <div className={styles.shopList}>
               {shops.map((shop) => (
                 <div key={shop.name} className={styles.shopCard}>
-                  <img src={shop.photo} alt={shop.name} className={styles.shopPhoto} />
+                  <Image src={shop.photo} alt={shop.name} className={styles.shopPhoto} />
                   <h3>{shop.name}</h3>
                   <p>{shop.location}</p>
                   <p>{shop.mobile}</p>

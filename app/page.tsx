@@ -1,5 +1,6 @@
 "use client";
 import { useEffect, useState } from "react";
+import Image from 'next/image';
 import styles from './discover.module.css';
 
 type Shop = {
@@ -192,7 +193,7 @@ export default function DiscoverPage() {
           <button className={styles.backButton} onClick={handleBackToList}>
             Back to list
           </button>
-          <img
+          <Image
             src={selectedShop.photo}
             alt={selectedShop.name}
             className={styles.detailPhoto}
@@ -211,7 +212,7 @@ export default function DiscoverPage() {
                 <div className={styles.shopList}>
                   {shops.map((shop) => (
                     <div key={shop.name} className={styles.shopCard}>
-                      <img
+                      <Image
                         src={shop.photo}
                         alt={shop.name}
                         className={styles.shopPhoto}

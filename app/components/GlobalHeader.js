@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { FaUser } from 'react-icons/fa'; 
+import Image from 'next/image';
 import styles from './GlobalHeader.module.css';
 
 
@@ -8,7 +9,7 @@ const GlobalHeader = () => {
     <header className={styles.header}>
       <div className={styles.logo}>
         <Link href="/">
-          <img src="/logo.png" alt="Logo" className={styles.logoImage} />
+          <Image src="/logo.png" alt="Logo" className={styles.logoImage} />
         </Link>
       </div>
       <nav className={styles.nav}>
